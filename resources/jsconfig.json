@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+      "baseUrl": "./vue-qib",
+      "paths": {
+          "components/*": [
+              "src/components/*"
+          ]
+      }
+  }
+}

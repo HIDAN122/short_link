@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-base;
+  }
+  body {
+    @apply text-lg text-black-90;
+  }
+}
+
+@layer utilities {
+  .btn {
+    @apply inline-flex text-blue font-medium border-2 rounded-lg border-blue-50 bg-blue-10 justify-center px-2.2 py-1 hover:text-blue-80 items-center transition duration-200 ease-in-out;
+  }
+  .btn--disabled {
+    @apply inline-flex text-black-50 font-medium border-2 rounded-lg border-black-30 bg-transparent hover:text-black-60 ;
+  }
+  .btn--clear {
+    @apply border-none  bg-transparent p-0;
+  }
+  .input {
+    @apply bg-white border-black-20 border rounded placeholder-black-50 p-1.5 focus:border-blue active:border-blue outline-none;
+  }
+  .checkbox {
+    @apply flex items-center;
+  }
+  .checkbox input {
+      @apply border-2 border-black-50 rounded-md inline-block flex-shrink-0 h-1.4 w-1.4 mr-1.4 appearance-none;
+    }
+  .checkbox input:checked {
+    @apply bg-checkbox-checked bg-cover bg-no-repeat bg-origin-border bg-center bg-cover border-transparent;
+  }
+  .checkbox label {
+    @apply text-black-50 text-sm
+  }
+  .checkbox label a {
+    @apply text-blue text-sm
+  }
+  .badge--green {
+    @apply text-green border-green-50 bg-green-10;
+  }
+  .badge--red {
+    @apply text-red  border-red-50 bg-red-10;
+  }
+  .notify::before {
+    @apply rounded-tl-lg rounded-bl-lg h-full w-1.2 inline-block top-0 left-0 bottom-0 absolute;
+    content: "";
+  }
+  .notify--green::before {
+    @apply bg-green;
+  }
+  .modal {
+    @apply z-999999 fixed top-0 left-0 right-0 bottom-0  items-center justify-center hidden;
+  }
+  .modal.show {
+    @apply z-999999 flex;
+  }
+  .modal-overlay {
+    @apply bg-modalOverlay h-screen w-screen opacity-80 fixed top-0 left-0 right-0 bottom-0 z-999999;
+  }
+  .modal-wrapper {
+    @apply z-1040999 relative bg-white shadow rounded-lg;
+  }
+}

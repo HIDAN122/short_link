@@ -1,0 +1,30 @@
+{
+  "name": "vue-qib",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "axios": "^0.24.0",
+    "core-js": "^3.15.2",
+    "postcss": "^7.0.36",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.18",
+    "@vue/cli-plugin-babel": "~4.5.13",
+    "@vue/cli-plugin-router": "~4.5.13",
+    "@vue/cli-plugin-vuex": "~4.5.13",
+    "@vue/cli-service": "~4.5.13",
+    "@vue/compiler-sfc": "^3.1.2",
+    "svgo": "^2.3.1",
+    "svgo-loader": "^3.0.0",
+    "vue-cli-plugin-svg-sprite": "~1.1.0"
+  }
+}
